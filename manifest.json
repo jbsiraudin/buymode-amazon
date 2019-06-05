@@ -1,0 +1,33 @@
+{
+  "name": "Buy mode",
+  "version": "1.0",
+  "description": "When entering amazon, The Sims' Buy Mode music is launched",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.amazon.com/*",
+        "https://*.amazon.fr/*",
+        "https://*.amazon.de/*",
+        "https://*.amazon.ca/*",
+        "https://*.amazon.co.uk/*",
+        "https://*.amazon.at/*",
+        "https://*.amazon.es/*",
+        "https://*.amazon.com.mx/*",
+        "https://*.amazon.co.jp/*",
+        "https://*.amazon.it/*",
+        "https://*.amazon.in/*",
+        "https://*.amazon.cn/*",
+        "https://*.amazon.com.br/*",
+        "https://*.amazon.com.au/*"
+      ],
+      "all_frames": true,
+      "js": ["content_script.js"]
+    }
+  ],
+  "manifest_version": 2,
+  "incognito": "split"
+}
