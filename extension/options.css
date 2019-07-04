@@ -1,0 +1,26 @@
+body {
+  min-width: 200px;
+  background: #000f35
+    url("https://i.annihil.us/u/prod/marvel/movies/captain-marvel/2/assets/images/home/bg.gif");
+  font-family: cursive, serif;
+}
+
+h3 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(
+    left,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    pink
+  );
+}
+
+label {
+  color: white;
+}

@@ -1,17 +1,13 @@
 {
   "name": "Buy mode",
-  "version": "0.2",
-  "description": "When entering Amazon, The Sims' Buy Mode music is launched.",
+  "version": "0.3",
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "description": "When entering Amazon, music (The Sims, Nook Store, Wii Store) is launched.",
   "background": {
     "persistent": false,
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": ["background.js"]
   },
-  "permissions": [
-    "tabs",
-    "storage"
-  ],
+  "permissions": ["tabs", "storage"],
   "browser_action": {
     "default_title": "Buy Mode",
     "default_popup": "options.html"
@@ -35,9 +31,7 @@
         "https://*.amazon.com.au/*"
       ],
       "all_frames": true,
-      "js": [
-        "content_script.js"
-      ]
+      "js": ["content_script.js"]
     }
   ],
   "options_ui": {

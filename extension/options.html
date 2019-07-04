@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Buy Mode options</title>
+    <link
+      rel="stylesheet"
+      href="options.css"
+      type="text/css"
+      media="screen"
+      title="no title"
+      charset="utf-8"
+    />
+  </head>
 
-<head>
-  <title>Amazon Buy Mode options</title>
-</head>
+  <body>
+    <form id="options-form">
+      <h3>Music to buy crappy stuff online:</h3>
+      <div>
+        <input
+          type="radio"
+          id="buy-mode"
+          name="selected-track"
+          value="buy-mode"
+        />
+        <label for="buy-mode">The Sims Buy Mode</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="wii-store"
+          name="selected-track"
+          value="wii-store"
+        />
+        <label for="wii-store">Wii Store</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="nook-store"
+          name="selected-track"
+          value="nook-store"
+        />
+        <label for="nook-store">Nook Store</label>
+      </div>
+      <div>
+        <input type="radio" id="both" name="selected-track" value="both" />
+        <label for="both">Both</label>
+      </div>
+      <div>
+        <input type="radio" id="random" name="selected-track" value="random" />
+        <label for="random">Random</label>
+      </div>
+    </form>
 
-<body style="min-width: 200px;">
-
-  <form id="options-form">
-    <h3>Favorite music</h3>
-    <div>
-      <input type="radio" id="buy-mode" name="selected-track" value="buy-mode">
-      <label for="buy-mode">The Sims Buy Mode</label>
-    </div>
-    <div>
-      <input type="radio" id="wii-store" name="selected-track" value="wii-store">
-      <label for="buy-mode">Wii Store</label>
-    </div>
-    <div>
-      <input type="radio" id="both" name="selected-track" value="both">
-      <label for="buy-mode">Both</label>
-    </div>
-    <div>
-      <input type="radio" id="random" name="selected-track" value="random">
-      <label for="buy-mode">Random</label>
-    </div>
-  </form>
-
-  <script src="options.js"></script>
-</body>
-
+    <script src="options.js"></script>
+  </body>
 </html>
