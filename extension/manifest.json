@@ -4,9 +4,14 @@
   "description": "When entering amazon, The Sims' Buy Mode music is launched",
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
-  "permissions": ["tabs"],
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -26,9 +31,15 @@
         "https://*.amazon.com.au/*"
       ],
       "all_frames": true,
-      "js": ["content_script.js"]
+      "js": [
+        "content_script.js"
+      ]
     }
   ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
   "manifest_version": 2,
   "incognito": "split"
 }
