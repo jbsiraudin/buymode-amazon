@@ -1,4 +1,3 @@
-
 function setSelectedTrack(selectedTrack) {
   console.log('setting selected track', selectedTrack)
   chrome.storage.sync.set({ selectedTrack });

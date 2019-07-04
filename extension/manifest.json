@@ -12,6 +12,10 @@
     "tabs",
     "storage"
   ],
+  "browser_action": {
+    "default_title": "Buy Mode",
+    "default_popup": "options.html"
+  },
   "content_scripts": [
     {
       "matches": [
