@@ -1,7 +1,7 @@
 {
   "name": "Buy mode",
-  "version": "0.1",
-  "description": "When entering amazon, The Sims' Buy Mode music is launched",
+  "version": "0.2",
+  "description": "When entering Amazon, The Sims' Buy Mode music is launched.",
   "background": {
     "persistent": false,
     "scripts": ["background.js"]
