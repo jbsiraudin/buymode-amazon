@@ -7,33 +7,27 @@
     "persistent": false,
     "scripts": ["background.js"]
   },
-  "permissions": ["tabs", "storage"],
+  "permissions": [
+    "storage",
+    "https://*.amazon.com/*",
+    "https://*.amazon.fr/*",
+    "https://*.amazon.de/*",
+    "https://*.amazon.ca/*",
+    "https://*.amazon.co.uk/*",
+    "https://*.amazon.at/*",
+    "https://*.amazon.es/*",
+    "https://*.amazon.com.mx/*",
+    "https://*.amazon.co.jp/*",
+    "https://*.amazon.it/*",
+    "https://*.amazon.in/*",
+    "https://*.amazon.cn/*",
+    "https://*.amazon.com.br/*",
+    "https://*.amazon.com.au/*"
+  ],
   "browser_action": {
     "default_title": "Buy Mode",
     "default_popup": "options.html"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://*.amazon.com/*",
-        "https://*.amazon.fr/*",
-        "https://*.amazon.de/*",
-        "https://*.amazon.ca/*",
-        "https://*.amazon.co.uk/*",
-        "https://*.amazon.at/*",
-        "https://*.amazon.es/*",
-        "https://*.amazon.com.mx/*",
-        "https://*.amazon.co.jp/*",
-        "https://*.amazon.it/*",
-        "https://*.amazon.in/*",
-        "https://*.amazon.cn/*",
-        "https://*.amazon.com.br/*",
-        "https://*.amazon.com.au/*"
-      ],
-      "all_frames": true,
-      "js": ["content_script.js"]
-    }
-  ],
   "options_ui": {
     "page": "options.html",
     "open_in_tab": false
